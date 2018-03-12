@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>A Simple Form</h1>
+            <h2>Form Fundamentals</h2>
+        </header>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Customer Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required>
+                <label for="phone">Telephone:</label>
+                <input type="tel" id="phone" name="phone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Pattern: 1-234-567-8910" required>
+                <label for="email">Email adress:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email adress" required multiple>
+            </fieldset>
+            <fieldset>
+                <legend>Books</legend>
+                <select name="books">
+                    <option label=" "></option>
+                    <option value="panLodowego">Pan Lodowego Ogrodu</option>
+                    <option value="achaja">Achaja</option>
+                    <option value="pomnikAchai">Pomnik Cesarzowej Achai</option>
+                    <option value="szubienicznik">Szubienicznik</option>
+                    <option value="virion">Virion</option>
+                </select>
+                <label for="quanity">Quanity (Maximum: 5)</label>
+                <input type="number" id="quanity" min="1" max="5">
+            </fieldset>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </main>
+</body>
+
+</html>
